@@ -26,9 +26,6 @@ jobs:
     - name: Run unit tests
       run: npm run test:unit
       
-    - name: Display username
-      run: echo "georgilukanov"
-      
   deploy:
       needs: build-and-test
       runs-on: ubuntu-latest
